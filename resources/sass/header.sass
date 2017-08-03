@@ -1,0 +1,505 @@
+@import "bourbon"
+@import "fonts.sass"
+@import "_vars.sass"
+
+body
+  font-size: 14px
+  color: #565555
+  position: relative
+  font-family: "HindRegular", sans-serif
+  overflow-x: hidden
+
+
+
+*
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+ul
+  li
+    display: inline-block
+
+a
+  text-decoration: none
+  -webkit-transition: all .2s
+  -moz-transition: all .2s
+  -ms-transition: all .2s
+  -o-transition: all .2s
+  transition: all .2s
+
+a:hover
+  color: #bd2631
+
+
+.hidden
+  display: none
+
+.clearfix:after, .clearfix:before
+  display: table
+  content: ''
+
+.clearfix:after
+  clear: both
+
+      /****BLOCK1 HEADER****/
+
+.contacts-information
+  background: #ededed
+  padding: 13px 100px
+
+.address-block
+  float: left
+  div
+    display: inline-block
+    margin-right: 15px
+  .fa-phone, .fa-location-arrow
+    color: #000000
+    margin-right: 5px
+  .city
+    background: #000000
+    color: #fff
+    border-radius: 4px
+    padding: 6px 16px
+    .fa-angle-down
+      margin-left: 15px
+      font-size: 18px
+      margin-top: 2px
+
+.social-icons
+  float: right
+  margin-top: 7px
+  ul
+    li
+      margin-left: 20px
+      a
+        color: #000000
+
+        /****BLOCK2 LOGO-SECTION****/
+
+.logo-head
+  padding: 23px 100px
+  background-color: #FFFFFF
+  .logo
+    float: left
+
+.static-info
+  float: right
+  margin-top: 17px
+  .title
+    color: #000000
+    font-weight: 600
+    font-size: 15px
+  li
+    p:first-of-type
+      float: left
+      margin-right: 15px
+      color: #000
+      font-size: 18px
+  li
+    p:last-of-type
+      display: inline-block
+  p
+    span
+      display: block
+  ul
+    li
+      padding-right: 35px
+      border-right: 1px solid #e6e6e6
+      margin-right: 20px
+  ul
+    li:last-of-type
+      border-right: none
+      padding-right: 0
+      margin-right: 0
+
+
+      /****BLOCK3 NAVIGATION AND SLIDER****/
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
+  color: #FFFFFF
+  background-color: #000
+
+
+.navigation-slider
+  position: relative
+  .slider
+    background-color: #000000
+    img
+      width: 100%
+      margin: 0
+      padding: 0
+  .navigation
+    background: #000000
+    padding: 0 100px
+    opacity: 0.8
+    position: absolute
+    width: 100%
+    nav
+      float: left
+      .mobile-menu
+        color: #fff
+        font-size: 24px
+        margin-top: 20px
+        display: none
+        cursor: pointer
+      ul
+        margin-bottom: 0
+        li
+          a
+            color: #FFFFFF
+            font-size: 16px
+            padding: 24px 16px 16px
+            display: inline-block
+            text-transform: uppercase
+            border-bottom: 7px solid transparent
+          a:hover
+            color: #FFFFFF
+            text-decoration: none
+            border-bottom: 7px solid #bd2631
+        .current
+          a
+            border-bottom: 7px solid #bd2631
+  .slider-content
+    position: absolute
+    top: 50%
+    width: 100%
+    float: left
+    padding: 0 70px
+    div
+      display: inline-block
+    .slider-content-text
+      padding: 0 100px
+    p
+      font-size: 43px
+      font-weight: 600
+      color: #FFFFff
+      margin: 0
+      padding: 0
+    p:first-of-type
+      font-size: 32px
+      color: #bd2631
+      font-weight: 700
+    p:last-of-type
+      font-size: 24px
+      text-transform: uppercase
+      font-weight: 500
+    .fa-angle-left, .fa-angle-right
+      font-size: 70px
+
+
+
+.arrow-right, .arrow-left
+  position: absolute
+  color: #FFFFff
+  top: 25%
+
+.arrow-right
+  right: 0
+  padding: 0 70px
+
+.search
+  float: right
+  color: #FFFFFF
+  line-height: 5
+
+
+  /**** BLOCK4 QUOTE****/
+
+.quote
+  padding: 23px 100px
+  background-color: #bd2631
+  .quote-content
+    position: relative
+    .quote-describe
+      p
+        color: #FFFFFF
+        font-family: "HindLight", sans-serif
+        font-weight: 300
+        margin: 0
+        padding: 0
+      p:first-of-type
+        font-size: 30px
+      p:last-of-type
+        font-size: 24px
+    .button
+      padding: 20px 30px
+      background: #FFFFFF
+      color: #000000
+      border-radius: 4px
+      font-size: 14px
+      font-family: "HindBold", sans-serif
+      position: absolute
+      top: 10%
+      right: 0
+
+
+/****BLOCK5 Products****/
+
+.firstpicture, .secondpicture, .thirdpicture, .fourthpicture, .fifthpicture, .sixthpicture, .seventhpicture, .eightpicture, .ninthpicture
+  min-height: 600px
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color: #000000
+
+
+.firstpicture, .sixthpicture, .seventhpicture
+  position: relative
+
+.firstpicture-content, .sixthpicture-content, .seventhpicture-content
+  position: absolute
+  width: 70%
+  margin: 0 auto
+  right: 0
+  left: 0
+  bottom: 0
+  p
+    margin: 0
+    padding: 10px
+    color: #fff
+    font-size: 19px
+    line-height: 40px
+    font-family: "HindLight", sans-serif
+    font-weight: 300
+  p:first-of-type
+    font-size: 40px
+    font-weight: 400
+    color: #bd2631
+
+.products
+  .firstpicture
+    background-image: url("../img/first.png")
+    .firstpicture-content
+      top: 35%
+  .secondpicture
+    background-image: url("../img/second.png.")
+  .thirdpicture
+    background-image: url("../img/third.png")
+    background-color: #FFFFFF
+    background-size: auto
+
+.services
+  .fourthpicture
+    background-image: url("../img/fourth.png")
+  .fifthpicture
+    background-image: url("../img/fifth.png")
+    background-color: #FFFFFF
+    background-size: auto
+  .sixthpicture
+    background-image: url("../img/sixth.png")
+    .sixthpicture-content
+      top: 35%
+
+
+.battery
+  .seventhpicture
+    background-image: url("../img/seventh.png")
+    .seventhpicture-content
+      top: 30%
+  .eightpicture
+    background-image: url("../img/eigth.png")
+    background-color: #bd2631
+    background-size: auto
+  .ninthpicture
+    background-image: url("../img/ninth.png")
+
+
+    /****BLOCK6 GUARANTEE****/
+
+.guarantee
+  background-color: #fff
+  .safe, .green, .ready
+    min-height: 470px
+    background-position: 50% 20%
+    background-repeat: no-repeat
+    background-size: auto
+    position: relative
+  .safe
+    background-image: url("../img/safe.png")
+  .green
+    background-image: url("../img/green.png")
+  .ready
+    background-image: url("../img/ready.png")
+
+
+.safe-content, .green-content, .ready-content
+  position: absolute
+  top: 50%
+  left: 0
+  right: 0
+  p
+    text-align: center
+    font-size: 18px
+    font-weight: 500
+    line-height: 30px
+    color: #303032
+  p:first-of-type
+    text-transform: uppercase
+    font-size: 36px
+    font-weight: 600
+    color: #bd2631
+
+
+    /****BLOCK7 UPSRENTAL****/
+
+.upsrental
+  background-color: #000000
+  height: 195px
+  position: relative
+  div
+    display: inline-block
+  .upsrental-img
+    position: absolute
+    top: 25%
+    left: 25%
+  .upsrental-content
+    position: absolute
+    top: 35%
+    left: 50%
+    p
+      font-size: 36px
+      color: #FFFFFF
+  .upsrental-img2
+    float: right
+
+    /****BLOCK8 DIRECTION****/
+
+.where-use
+  .container-fluid
+    background-color: #bd2631
+    overflow: hidden
+  ul
+    margin: 0 auto
+    padding: 0
+    li
+      list-style: none
+      display: inline-block
+      float: left
+      width: 20%
+      text-align: center
+      p
+        text-align: center
+        font-size: 18px
+        font-family: "HindBold", sans-serif
+        color: #FFFFFF
+        padding: 30px
+        margin: 0
+    img
+      max-width: 100%
+
+      /****BLOCK9 BRANDS****/
+
+.brands
+  height: 192px
+  background: #FFFFFF
+  margin: 0
+  padding: 0
+  position: relative
+  .group-brands
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 65%
+    height: 30%
+    margin: auto
+    li
+      display: inline-block
+      float: left
+      width: 20%
+      text-align: center
+      img
+        max-width: 100%
+
+      /****BLOCK10 FOOTER****/
+
+.head-of-footer
+  background-color: #242424
+  .head-of-footer-content
+    padding: 70px 170px
+    ul
+      li
+        display: inline-block
+        float: left
+        width: 25%
+        border-right: 1px solid #353535
+        div
+          width: 82%
+          p
+            color: #FFFFff
+            font-size: 14px
+            font-weight: 400
+            padding: 0 0 15px 0
+            margin: 0
+          p:first-of-type
+            font-size: 22px
+            color: #bd2631
+            font-weight: 500
+            text-transform: uppercase
+            padding: 0 0 25px 0
+          .title
+            color: #bd2631
+            padding: 0
+            font-weight: 600
+      li:last-of-type
+        border-right: none
+
+
+.recent-posts, .recent-tweets, .about, .contact-information
+  margin: 0 auto
+
+
+
+
+
+.foot-of-footer
+  background-color: #131313
+  height: 84px
+  position: relative
+  .year
+    position: absolute
+    top: 40%
+    left: 11%
+    p
+      margin: 0
+      color: #fff
+      font-size: 12px
+  .powered
+    float: right
+    position: absolute
+    top: 40%
+    left: 73%
+    p
+      margin: 0
+      color: #fff
+      font-size: 12px
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
